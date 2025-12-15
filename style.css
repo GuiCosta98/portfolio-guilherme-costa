@@ -1,0 +1,208 @@
+/* Configuração Global */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+html,
+body,
+main {
+  background-color: #1f1f1f;
+  height: 100%;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  color: #ebe8e8a3;
+}
+
+h1 {
+  font-family: "Sen";
+}
+
+h3 {
+  font-family: "Sen";
+}
+
+h4 {
+  font-family: "Sen";
+}
+
+p {
+  font-family: "Inter";
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.grid-container-home {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.grid-item {
+  border: 1px solid #ebe8e8a3;
+  border-radius: 5px;
+}
+
+/* Seção - Header */
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-grow: 1;
+}
+
+/* Seção - Habilidades */
+
+#secao-habilidades {
+  grid-column: 2/4;
+  grid-row: 1/1;
+}
+
+#secao-habilidades h4 {
+  justify-self: center;
+}
+
+#secao-habilidades p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Seção - Sobre Mim e Foto de Perfil */
+
+#secao-sobre-mim {
+  grid-column: 1/1;
+  grid-row: 1/3;
+}
+
+#secao-sobre-mim p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#secao-sobre-mim h4 {
+  justify-self: center;
+}
+
+#foto-de-perfil {
+  height: 250px;
+  border-radius: 5%;
+}
+
+#logo-linkedin {
+  height: 40px;
+  padding-right: 10px;
+}
+
+#logo-cv {
+  height: 40px;
+}
+
+#logo-github {
+  height: 40px;
+  padding-left: 10px;
+}
+
+.foto-de-perfil {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+
+.icones {
+  display: flex;
+  justify-content: center;
+}
+
+.icones-expansiveis {
+  transition: transform 0.3s ease;
+}
+
+.icones-expansiveis:hover {
+  transform: scale(1.1);
+}
+
+/* Seção - Projetos */
+
+#secao-projetos h4 {
+  justify-self: center;
+}
+
+#secao-projetos p {
+  justify-self: center;
+  color: #ebe8e8a3;
+}
+
+#shruggie {
+  font-size: 30px;
+  z-index: 1;
+  justify-self: center;
+}
+
+/* Seção - Contatos */
+
+#formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#formulario input,
+button {
+  border: 2px solid #ebe8e8a3;
+  border-radius: 10px;
+  background-color: hsla(180, 7%, 94%, 0);
+}
+
+
+#formulario button {
+  padding: 10px;
+  width: 45%;
+  justify-items: center;
+  margin: 10px;
+  font-family: "Inter";
+  font-weight: bold;
+  color: #ebe8e8a3;
+}
+
+#campo-nome {
+  padding: 10px;
+  width: 90%;
+  font-family: "Inter";
+}
+
+#campo-email {
+  padding: 10px;
+  width: 90%;
+  font-family: "Inter";
+}
+
+#campo-mensagem {
+  padding: 50px;
+  width: 70%;
+  font-family: "Inter";
+}
